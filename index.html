@@ -36,12 +36,12 @@
 										<form method="post" action="#">
 											<div class="fields">
 												<div class="field">
-													<textarea name="message" id="message" rows="1"></textarea>
+													<textarea name="message" id="message" rows="1">password:</textarea>
 												</div>
 											</div>
 											<ul class="actions">
 												<li><input id= "pswd"value="ENTER" class="button primary" /></li>
-												
+												<li><a href="#q" class="button primary color1 circle icon">Next</a></li>
 											</ul>
 											<h2><span id = "typed5"></span></h2></p>
 										</form>
@@ -119,8 +119,7 @@
 
 			  });
 
-				typed3.stop();
-				typed4.stop();
+			
 				typed5.stop();
 				typed6.stop();
 			</script>
@@ -187,7 +186,7 @@
 			$('#pswd').click(
 				function()
 				{
-					if($('#message').val() == "12345")
+					if($('#message').val() == "password:12345")
 					{
 						typed5.start();
 					}
