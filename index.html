@@ -28,19 +28,20 @@
 
 								<div class="intro joined">
 									<h2 class="major">The Game</h2>
-									<p>Got a password?</p>
+									<p>Solve. Type the answer in the box.</p>
+						
 								</div>
 								<div class="inner columns divided">
 									<div class="span-3-25">
 										<form method="post" action="#">
 											<div class="fields">
 												<div class="field">
-													<textarea name="message" id="message" rows="1">password:</textarea>
+													<textarea name="message" id="message" rows="1"></textarea>
 												</div>
 											</div>
 											<ul class="actions">
 												<li><input id= "pswd"value="ENTER" class="button primary" /></li>
-												<li><a href="#q" class="button primary color1 circle icon fa-angle-right">Next</a></li>
+												
 											</ul>
 											<h2><span id = "typed5"></span></h2></p>
 										</form>
@@ -50,8 +51,8 @@
 							<section class="panel banner color1 medium" id="q" style="display:none;">
 
 								<div class="intro joined">
-									<h1 class="major">Karina Yang,<br>Will you go to prom with me?</h1>
-									<p>-Dev</p>
+									
+									
 								</div>
 								<div class="inner columns divided">
 									<div class="span-1">
@@ -85,46 +86,7 @@
 			<script src="assets/js/main.js"></script>
 
 			<script>
-				var typed = new Typed('#typed', {
-			    strings: ['<strong>Hey Karina,^800 I have </strong>something to ask you^200...'],
-			    typeSpeed: 30,
-			    backSpeed: 40,
-					startDelay:1000,
-			    smartBackspace: true,
-					fadeOut: true,
-					onComplete: function(){
-						var typed2 = 	new Typed('#typed2', {
-						strings: ["But you're so special to me,^500 I couldn't decide on just <strong>one way</strong>"],
-						typeSpeed: 30,
-						backSpeed: 40,
-						startDelay:1000,
-						smartBackspace: true,
-						showCursor:false // this is a default
-						//loop: true
-						});
-			  	} // this is a default
-			    //loop: true
-			  });
-				var typed3 = 	new Typed('#typed3', {
-				strings: ["<strong>What's another</strong> 1 evening<strong>?</strong>", "<strong>What's another</strong> 12 hours<strong>?</strong>", "<strong>What's another</strong> 720 minutes<strong>?</strong>", "<strong>What's another</strong> 43200 seconds<strong>?</strong>"],
-				typeSpeed: 30,
-				backSpeed: 40,
-				startDelay:500,
-				smartBackspace: true, // this is a default
-				loop: true,
-				showCursor:false
-				});
-				var typed4 = new Typed('#typed4', {
-			    strings: ['But maybe I can sweep you off your feet this time?'],
-			    typeSpeed: 30,
-			    backSpeed: 40,
-					startDelay:5000,
-			    smartBackspace: true,
-					fadeOut: true,
-					onComplete: function(){
-			  	} // this is a default
-			    //loop: true
-			  });
+				
 				var typed5 = new Typed('#typed5', {
 			    strings: ['ACCESS GRANTED'],
 			    typeSpeed: 30,
@@ -143,7 +105,7 @@
 			  });
 
 				var typed6 = new Typed('#typed6', {
-			    strings: ['See ya then ;)'],
+			    strings: ['I try to see you there :)'],
 			    typeSpeed: 30,
 			    backSpeed: 40,
 					startDelay:20000,
@@ -225,7 +187,7 @@
 			$('#pswd').click(
 				function()
 				{
-					if($('#message').val() == "password:karinaboo")
+					if($('#message').val() == "12345")
 					{
 						typed5.start();
 					}
